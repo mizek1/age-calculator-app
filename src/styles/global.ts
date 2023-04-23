@@ -18,10 +18,24 @@ const GlobalStyles = createGlobalStyle`
       font-family: ${theme.font.family};
       font-size: ${theme.font.sizes.medium};
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
-      min-width: 320px;
+      width: 100%;
       min-height: 100vh;
+      background-color: ${theme.colors.lightGrey};
+      padding: 0 16px;
+
+      #root {
+        width: 100%;
+
+        form {
+          width: 100%;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        align-items: center;
+      }
     }
   `}
 
